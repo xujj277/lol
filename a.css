@@ -1,0 +1,229 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+/* commom css */
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.bottom {
+	display: inline-block;
+	font-size: 20px;
+	color: #fff;
+	background-color: #fed136;
+	padding: 20px 40px;
+	border-radius: 4px;
+}
+.bottom:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+html,body {
+	height: 100%;	
+}
+ header {
+ 	position: relative;
+ 	height: 100%;	
+ 	min-height: 600px;
+	background: url('http://imgsrc.baidu.com/forum/pic/item/c3bdd8039245d6884bca85d4aec27d1ed31b24b1.jpg')
+	center no-repeat;
+	background-size: cover;
+}
+body {
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	font-size: 14px;
+	color: #333;
+}
+header .navbar {
+	padding: 25px;
+}
+.layout {
+	width: 1100px;
+	margin: 0 auto;
+}
+header .logo {
+	color: #fed136;
+	font-size: 2em;
+	float: left;
+	margin: 10px;
+}
+header .nav {
+	float: right;
+	padding: 10px;
+} 
+header .nav > li {
+	float: left;
+	margin: 5px;
+} 
+header .nav a {
+	display: inline-block;
+	color: #fff;
+	padding: 5px;
+	font-size: 17px;
+	border-radius: 3px;
+}
+header .nav a:hover {
+	background: #fed136;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+header .intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+}
+header .intro h3 {
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	font-style: italic;
+}
+header .intro h2 {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;   
+}
+section {
+	text-align: center;
+	margin-top: 30px;
+}
+section > h2 {
+	margin-top: 50px;
+	font-size: 40px;
+}
+section > p {
+	margin-top: 20px;
+	margin-bottom: 70px;
+	font-style: italic;
+}
+section .heroskill > li {
+	float: left;
+	width: 33.33%;
+	padding: 20px 30px;
+}
+#skill {
+	height: 100%;
+	min-height: 600px;
+	background-color: #fff;
+	padding: 100px 0;
+}
+section > ul > li > h3 {
+	margin: 15px;
+}
+section > ul > li > p {
+	line-height: 1.75;
+	font-size: 14px;
+	color: #777;
+}
+
+section .skins figure {
+	width: calc(33.33% - 20px);
+	height: 250px;
+	margin: 10px;
+	float: left;
+}
+section .skins a {
+	display: block;
+	height: 200px;
+}
+section .skins img {
+	width: 100%;
+	height: 100%;
+}
+section .skins figcaption {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+section .skins p {
+	color: #666;
+	margin-top: 10px;
+}
+section .background img,
+section .background .end {
+	background-color: #fed136;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid lightblue;	
+}
+section .background .end{
+	font-size: 25px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #fff;
+}
+
+section .background > li{
+	margin-top: 100px;
+	position: relative;
+}
+section .background > li::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+section .background > li:nth-child(odd) img {
+	float: right;
+}
+section .background > li:nth-child(odd){
+
+	padding-right: calc(50% - 75px);
+	text-align: right;
+}
+section .background > li:nth-child(odd) dl {
+	margin-right: 180px;
+}
+section .background > li:nth-child(even) {
+	padding-left: calc(50% - 75px);
+	text-align: left;
+}
+section .background > li:nth-child(even) dl {
+	margin-right: 0;
+	margin-left: 180px;
+}
+section .background > li:nth-child(even) img {
+		float: left;
+}
+section .background dt {
+	font-size:  20px;
+	font-weight: bold;
+}
+section .background dd:nth-of-type(1) {
+	color: #666;
+	font-size: 16px;
+	font-weight: bold;
+}
+section .background dl {
+	line-height: 1.5;
+}
+section .background > li::before {
+	content: '';
+  position: absolute;
+  right: 50%;
+  top: 150px;
+  margin-right: -1px;
+  height: 145px;
+  width: 5px;
+  background-color: lightblue;
+}
+section .background > li:last-child::before{
+	height: 0;
+}
